@@ -362,6 +362,45 @@ nav {
     border-color: rgba(252, 211, 77, 0.6);
 }
 
+.screenshot-card {
+    position: relative;
+    width: 100%;
+    min-height: 380px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 25, 41, 0.3);
+    backdrop-filter: blur(2px);
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.project-card:hover .card-overlay {
+    background: rgba(10, 25, 41, 0.85);
+    backdrop-filter: blur(8px);
+}
+
+.card-content {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.text-cyan-bright {
+    color: #00D9FF;
+}
+
 .project-panel {
     position: relative;
     width: 100%;
@@ -579,8 +618,11 @@ span {
         height: 3rem;
     }
 
-    .project-panel {
-        min-height: 280px;
+    .screenshot-card {
+        min-height: 320px;
+    }
+
+    .card-overlay {
         padding: 1.5rem;
     }
 
@@ -589,8 +631,14 @@ span {
     }
 
     /* Touch device support - tap to darken overlay */
-    .project-card:active .panel-overlay {
-        opacity: 1;
+    .project-card:active .card-overlay {
+        background: rgba(10, 25, 41, 0.85);
+        backdrop-filter: blur(8px);
+    }
+
+    .project-card:active .card-content p,
+    .project-card:active .card-content a {
+        opacity: 1 !important;
     }
 }
 
