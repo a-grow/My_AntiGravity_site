@@ -1,0 +1,4 @@
+1:"$Sreact.fragment"
+2:I[39756,["/aurora-audio/_next/static/chunks/ff1a16fafef87110.js","/aurora-audio/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
+3:I[37457,["/aurora-audio/_next/static/chunks/ff1a16fafef87110.js","/aurora-audio/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
+0:{"buildId":"9z0K17lQ8f1yCwLkTMYxj","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
