@@ -1,2 +1,0 @@
-:HL["/aurora-audio/_next/static/chunks/ae8ec8d19c59f9dc.css","style"]
-0:{"buildId":"z93gZVErTgqSPBJWiZh0k","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"/_not-found","paramType":null,"paramKey":"/_not-found","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
