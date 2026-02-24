@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HavenSpaces | Transforming Homes & Businesses</title>
+    <meta name="description" content="Transforming Homes & Businesses Into Havens.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="#" class="logo" aria-label="HavenSpaces Home">
+                <img src="assets/AndrewGrowLogoNoText.png" alt="HavenSpaces Logo" width="48" height="48">
+                <span>HavenSpaces</span>
+            </a>
+            <nav class="main-nav" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="#residential">Residential</a></li>
+                    <li><a href="#commercial">Commercial</a></li>
+                    <li><a href="#process">Process</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero" id="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Transforming Homes &amp; Businesses Into Havens.</h1>
+                <p class="hero-subtitle">High-end renovations and luxury design solutions.</p>
+                <a href="#residential" class="btn btn-primary">Explore Our Work</a>
+            </div>
+        </div>
+
+        <section id="residential" class="section">
+            <div class="container">
+                <h2 class="section-title">Residential Showcase</h2>
+                <div class="grid-2">
+                    <article class="project-card">
+                        <img src="assets/residential.png" alt="Modern luxury living room interior with natural lighting" loading="lazy">
+                        <div class="project-info">
+                            <h3>The Artisan Villa</h3>
+                            <p>A complete redesign of a classic mid-century home focusing on natural materials and light.</p>
+                        </div>
+                    </article>
+                    <!-- Before/After Slider for Residential -->
+                    <article class="project-card">
+                        <div class="before-after-slider" aria-label="Before and after renovation slider" role="region">
+                            <img src="assets/after.png" alt="Modernized living room after luxury renovation" class="img-after">
+                            <img src="assets/before.png" alt="Outdated living room before renovation" class="img-before">
+                            <div class="slider-handle" aria-hidden="true">
+                                <span class="slider-button">&#8596;</span>
+                            </div>
+                            <input type="range" min="0" max="100" value="50" class="slider-input" aria-label="Percentage of after image shown">
+                        </div>
+                        <div class="project-info">
+                            <h3>Urban Loft Transformation</h3>
+                            <p>Slide to see the dramatic before &amp; after of this downtown luxury loft.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="commercial" class="section bg-gray">
+            <div class="container">
+                <h2 class="section-title">Commercial Showcase</h2>
+                <div class="grid-2">
+                    <article class="project-card text-card">
+                        <div class="project-info">
+                            <h3>Elevating Brand Environments</h3>
+                            <p>We believe commercial spaces should be as inviting as they are functional. Our commercial projects focus on brand identity, employee well-being, and unforgettable client impressions.</p>
+                            <a href="#" class="btn btn-outline" style="margin-top:24px;">Discuss a Project</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <img src="assets/commercial.png" alt="Sleek corporate office with green living walls and ergonomic design" loading="lazy">
+                        <div class="project-info">
+                            <h3>Zenith Tech HQ</h3>
+                            <p>A restorative, productivity-enhancing open office for a leading tech firm.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="process" class="section">
+            <div class="container">
+                <h2 class="section-title">Our Process</h2>
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <div class="timeline-marker">1</div>
+                        <div class="timeline-content">
+                            <h3>Consultation &amp; Vision</h3>
+                            <p>We begin by understanding your space, your needs, and your ultimate vision for a haven.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Design &amp; Selection</h3>
+                            <p>Curating the finest materials, color palettes, and architectural details to bring the vision to life.</p>
+                        </div>
+                        <div class="timeline-marker">2</div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-marker">3</div>
+                        <div class="timeline-content">
+                            <h3>Execution &amp; Craftsmanship</h3>
+                            <p>Our expert builders and artisans meticulously renovate the space, ensuring the highest standards of quality.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="section bg-navy text-white">
+            <div class="container">
+                <h2 class="section-title">Client Feedback</h2>
+                <div class="grid-2">
+                    <article class="testimonial">
+                        <blockquote>
+                            "HavenSpaces truly transformed our house into a home. The attention to detail and high-end finishes are beyond our expectations."
+                        </blockquote>
+                        <cite>- Sarah &amp; James T.</cite>
+                    </article>
+                    <article class="testimonial">
+                        <blockquote>
+                            "Our new office layout has completely changed the company culture. It feels less like an office and more like a luxury lounge. Remarkable work."
+                        </blockquote>
+                        <cite>- David K., CEO</cite>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer bg-navy text-white">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand logo">
+                    <img src="assets/AndrewGrowLogoNoText.png" alt="HavenSpaces Logo" width="40" height="40" style="filter: brightness(0) invert(1);">
+                    <span>HavenSpaces</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#residential">Residential</a>
+                    <a href="#commercial">Commercial</a>
+                    <a href="#process">Process</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 HavenSpaces. A sample project by Andrew Grow.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
