@@ -90,5 +90,26 @@ document.addEventListener('DOMContentLoaded', () => {
             input.addEventListener('touchstart', hideTagline);
         }
     });
+
+    // 3. Parallax Background Zoom Effect
+    const heroBgs = document.querySelectorAll('.hero-bg');
+    let scrollTimeout;
+
+    if (heroBgs.length > 0 && !prefersReducedMotion) {
+        window.addEventListener('scroll', () => {
+            // Apply zoom while scrolling
+            heroBgs.forEach(bg => {
+                bg.style.transform = 'scale(1.05)';
+            });
+
+            // Clear previous timeout and set a new one to revert scale when scroll stops
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(() => {
+                heroBgs.forEach(bg => {
+                    bg.style.transform = 'scale(1.0)';
+                });
+            }, 150); // 150ms after scroll stops
+        }, { passive: true });
+    }
 });
 
