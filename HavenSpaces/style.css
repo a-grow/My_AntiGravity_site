@@ -264,8 +264,24 @@ a {
 
 .hero-title {
   font-size: clamp(2.5rem, 5vw, 4.5rem);
+  margin-top: 40px;
+  /* Desktop */
   margin-bottom: var(--space-3);
   color: var(--color-base-white);
+}
+
+@media (max-width: 1023px) {
+  .hero-title {
+    margin-top: 30px;
+    /* Tablet */
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-title {
+    margin-top: 20px;
+    /* Mobile */
+  }
 }
 
 .hero-subtitle {
