@@ -57,7 +57,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const button = slider.querySelector('.slider-button');
         if (button) {
+            // Hover glow effects
+            input.addEventListener('mouseenter', () => button.classList.add('dragging'));
+            input.addEventListener('mouseleave', () => button.classList.remove('dragging'));
+
+            // Drag glow and bounce logic
+            input.addEventListener('mousedown', () => button.classList.add('dragging'));
+            input.addEventListener('touchstart', () => button.classList.add('dragging'));
+
             const triggerBounce = () => {
+                button.classList.remove('dragging');
                 button.classList.add('bounce');
                 setTimeout(() => {
                     button.classList.remove('bounce');
