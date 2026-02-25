@@ -214,7 +214,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  opacity: 0.35;
+  opacity: 0.5;
   filter: blur(2px);
   z-index: -1;
   transform: scale(1.0);
