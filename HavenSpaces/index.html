@@ -32,10 +32,18 @@
 
     <main>
         <div class="hero" id="hero">
-            <div class="hero-bg"></div>
+            <div class="before-after-slider hero-slider" aria-label="Before and after renovation slider" role="region">
+                <img src="assets/afterroom.png" alt="Modernized living room after luxury renovation" class="img-after">
+                <img src="assets/beforeroom.jpeg" alt="Outdated living room before renovation" class="img-before">
+                <div class="slider-handle" aria-hidden="true">
+                    <span class="slider-button">&#8596;</span>
+                </div>
+                <input type="range" min="0" max="100" value="50" class="slider-input"
+                    aria-label="Percentage of after image shown">
+            </div>
             <div class="hero-content">
-                <h1 class="hero-title">Transforming Homes &amp; Businesses Into Havens.</h1>
-                <p class="hero-subtitle">High-end renovations and luxury design solutions.</p>
+                <h1 class="hero-title">Transform Your Space Instantly</h1>
+                <p class="hero-subtitle">Slide to reveal the dramatic renovation</p>
                 <a href="#residential" class="btn btn-primary">Explore Our Work</a>
             </div>
         </div>
@@ -53,24 +61,7 @@
                                 light.</p>
                         </div>
                     </article>
-                    <!-- Before/After Slider for Residential -->
-                    <article class="project-card">
-                        <div class="before-after-slider" aria-label="Before and after renovation slider" role="region">
-                            <img src="assets/afterroom.png" alt="Modernized living room after luxury renovation"
-                                class="img-after">
-                            <img src="assets/beforeroom.jpeg" alt="Outdated living room before renovation"
-                                class="img-before">
-                            <div class="slider-handle" aria-hidden="true">
-                                <span class="slider-button">&#8596;</span>
-                            </div>
-                            <input type="range" min="0" max="100" value="50" class="slider-input"
-                                aria-label="Percentage of after image shown">
-                        </div>
-                        <div class="project-info">
-                            <h3>Urban Loft Transformation</h3>
-                            <p>Slide to see the dramatic before &amp; after of this downtown luxury loft.</p>
-                        </div>
-                    </article>
+                    <!-- Removed duplicate slider card -->
                 </div>
             </div>
         </section>
