@@ -4,8 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 1. Section Reveals on Scroll
     const sections = document.querySelectorAll('.section');
-    
-    // If reduced motion is preferred, immediately show all elements without transition
+
     if (prefersReducedMotion) {
         sections.forEach(section => {
             section.classList.add('active');
@@ -30,16 +29,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 2. Before/After Slider Logic
     const sliders = document.querySelectorAll('.before-after-slider');
-    
+
     sliders.forEach(slider => {
         const input = slider.querySelector('.slider-input');
         const handle = slider.querySelector('.slider-handle');
-        const imgBefore = slider.querySelector('.img-before');
+        const imgAfter = slider.querySelector('.img-after'); // clip AFTER image
 
-        slider.addEventListener('input', (e) => {
+        input.addEventListener('input', (e) => {
             const value = e.target.value;
-            // The before image is on top, revealing the after image underneath as it shrinks
-            imgBefore.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
+            // Clip the AFTER image to reveal/hide it
+            imgAfter.style.clipPath = `inset(0 ${100 - value}% 0 0)`;
+            // Move the handle to match slider position
             handle.style.left = `${value}%`;
         });
     });
