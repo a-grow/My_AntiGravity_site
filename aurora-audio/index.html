@@ -362,13 +362,7 @@
                       </p>
                     </div>
                     <div class="flex items-center justify-between">
-                      <span class="text-lg font-semibold text-white">$699</span
-                      ><button
-                        onclick="openModal(\'Aurora Nebula\', \'Open-back studio reference with crystalline soundstage.\', \'$699\', \'./assets/headsetN.png\')"
-                        class="text-xs font-semibold uppercase tracking-[0.3em] text-cyan-200 transition group-hover:text-white"
-                      >
-                        View details
-                      </button>
+                      <span class="text-lg font-semibold text-white">$699</span>
                     </div>
                   </div>
                 </div>
@@ -415,13 +409,7 @@
                       </p>
                     </div>
                     <div class="flex items-center justify-between">
-                      <span class="text-lg font-semibold text-white">$499</span
-                      ><button
-                        onclick="openModal(\'Aurora Borealis\', \'Flagship wireless with adaptive spatial clarity.\', \'$499\', \'./assets/headsetB.png\')"
-                        class="text-xs font-semibold uppercase tracking-[0.3em] text-cyan-200 transition group-hover:text-white"
-                      >
-                        View details
-                      </button>
+                      <span class="text-lg font-semibold text-white">$499</span>
                     </div>
                   </div>
                 </div>
@@ -468,13 +456,7 @@
                       </p>
                     </div>
                     <div class="flex items-center justify-between">
-                      <span class="text-lg font-semibold text-white">$349</span
-                      ><button
-                        onclick="openModal(\'Aurora Pulse\', \'Portable performance tuned for deep, velvety bass.\', \'$349\', \'./assets/headsetP.png\')"
-                        class="text-xs font-semibold uppercase tracking-[0.3em] text-cyan-200 transition group-hover:text-white"
-                      >
-                        View details
-                      </button>
+                      <span class="text-lg font-semibold text-white">$349</span>
                     </div>
                   </div>
                 </div>
@@ -682,111 +664,6 @@
         1,
         '10:I[27201,["/aurora-audio/assets/_next/static/chunks/ff1a16fafef87110.js","/aurora-audio/assets/_next/static/chunks/d2be314c3ece3fbe.js"],"IconMark"]\na:null\ne:[["$","title","0",{"children":"Aurora Audio — Premium Headphones"}],["$","meta","1",{"name":"description","content":"Aurora Audio crafts premium headphones with luminous clarity, immersive sound, and aurora-inspired design."}],["$","link","2",{"rel":"icon","href":"/aurora-audio/assets/favicon.ico?favicon.0b3bf435.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L10","3",{}]]\n',
       ]);
-    </script>
-    <div
-      id="product-modal"
-      class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-6 py-10 backdrop-blur"
-    >
-      <div
-        class="relative w-full max-w-3xl rounded-[32px] border border-white/10 bg-[#0b0f1b] p-8"
-        style="opacity: 1; transform: none"
-      >
-        <button
-          type="button"
-          onclick="
-            document.getElementById('product-modal').classList.add('hidden')
-          "
-          class="absolute right-6 top-6 text-xs uppercase tracking-[0.3em] text-slate-400 transition hover:text-white z-50"
-        >
-          Close
-        </button>
-        <div class="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
-          <div
-            class="relative h-56 overflow-hidden rounded-3xl border border-white/10"
-          >
-            <img
-              id="modal-img"
-              alt="Product"
-              loading="lazy"
-              decoding="async"
-              class="object-cover"
-              style="
-                position: absolute;
-                height: 100%;
-                width: 100%;
-                left: 0;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                color: transparent;
-              "
-              src=""
-            />
-          </div>
-          <div class="space-y-4">
-            <h3 id="modal-title" class="text-2xl font-semibold text-white"></h3>
-            <p id="modal-desc" class="text-sm text-slate-200/80"></p>
-            <div class="flex items-center justify-between pt-2">
-              <span
-                id="modal-price"
-                class="text-lg font-semibold text-white"
-              ></span>
-              <button
-                type="button"
-                onclick="
-                  document
-                    .getElementById('product-modal')
-                    .classList.add('hidden')
-                "
-                class="rounded-full bg-white/15 px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-white transition hover:bg-white/25"
-              >
-                Done
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script>
-      function openModal(title, desc, price, imgSrc) {
-        const modal = document.getElementById("product-modal");
-        document.getElementById("modal-title").textContent = title;
-        document.getElementById("modal-desc").textContent = desc;
-        document.getElementById("modal-price").textContent = price;
-        document.getElementById("modal-img").src = imgSrc;
-        modal.classList.remove("hidden");
-        // Accessibility: focus trap
-        const focusable = modal.querySelectorAll(
-          'button, [tabindex]:not([tabindex="-1"])',
-        );
-        let first = focusable[0],
-          last = focusable[focusable.length - 1];
-        function trap(e) {
-          if (e.key === "Tab") {
-            if (e.shiftKey && document.activeElement === first) {
-              e.preventDefault();
-              last.focus();
-            } else if (!e.shiftKey && document.activeElement === last) {
-              e.preventDefault();
-              first.focus();
-            }
-          }
-          if (e.key === "Escape") closeModal();
-        }
-        function closeOnOverlay(e) {
-          if (e.target === modal) closeModal();
-        }
-        function closeModal() {
-          modal.classList.add("hidden");
-          document.removeEventListener("keydown", trap);
-          modal.removeEventListener("click", closeOnOverlay);
-        }
-        document.addEventListener("keydown", trap);
-        modal.addEventListener("click", closeOnOverlay);
-        // Focus first button
-        setTimeout(() => first && first.focus(), 50);
-      }
     </script>
   </body>
 </html>
