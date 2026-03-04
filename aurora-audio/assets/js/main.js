@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-  window.openModal = openModal;
   // Attach listeners to all "View details" buttons
   document.querySelectorAll('button[data-product]').forEach(btn => {
     btn.addEventListener('click', function(e) {
