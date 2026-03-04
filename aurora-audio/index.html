@@ -20,7 +20,7 @@
         <nav class="hidden items-center gap-6 text-sm text-slate-200 md:flex">
           <a class="transition hover:text-cyan-200" href="/aurora-audio/pricing/">Pricing</a><a
             class="transition hover:text-cyan-200" href="/aurora-audio/about/">About</a><a
-            class="transition hover:text-cyan-200" href="/aurora-audio/contact/">Contact</a>
+            class="transition hover:text-cyan-200" href="#contact">Contact</a>
         </nav>
       </div>
     </header>
@@ -201,25 +201,24 @@
           </div>
           <div class="grid gap-6 md:grid-cols-3" style="opacity: 0">
             <div class="product-card">
-              <img src="./assets/headsetN.png" alt="Aurora Nebula">
+              <img src="assets/headsetN.png" alt="Aurora Nebula">
               <h3>Aurora Nebula</h3>
               <p>Open-back studio reference with crystalline soundstage.</p>
               <p class="price">$699</p>
             </div>
             <div class="product-card">
-              <img src="./assets/headsetB.png" alt="Aurora Borealis">
+              <img src="assets/headsetB.png" alt="Aurora Borealis">
               <h3>Aurora Borealis</h3>
               <p>Flagship wireless with adaptive spatial clarity.</p>
               <p class="price">$499</p>
             </div>
             <div class="product-card">
-              <img src="./assets/headsetP.png" alt="Aurora Pulse">
+              <img src="assets/headsetP.png" alt="Aurora Pulse">
               <h3>Aurora Pulse</h3>
               <p>Portable performance tuned for deep, velvety bass.</p>
               <p class="price">$349</p>
             </div>
           </div>
-        </div>
       </section>
       <section class="px-6 py-20" style="opacity: 0; transform: translateY(24px)">
         <div class="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[0.8fr_1.2fr]">
@@ -332,6 +331,56 @@
           </div>
         </div>
       </section>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="px-6 py-20" style="opacity: 0; transform: translateY(24px)">
+        <div class="mx-auto max-w-4xl">
+          <div class="text-center mb-12">
+            <p class="text-xs font-semibold uppercase tracking-[0.4em] text-cyan-200/70">Connect</p>
+            <h2 class="mt-4 text-3xl font-semibold text-white">Let's Work Together!</h2>
+            <p class="mt-4 text-sm text-slate-200/80 max-w-2xl mx-auto">
+              Ready to experience Aurora Audio? Fill out the form below.
+            </p>
+          </div>
+
+          <div class="rounded-3xl border border-white/10 bg-white/5 p-8 md:p-12">
+            <form action="https://formsubmit.co/growandygrow@gmail.com" method="POST" class="space-y-6">
+              <!-- Hidden Fields -->
+              <input type="hidden" name="_subject" value="New Aurora Audio Inquiry">
+              <input type="hidden" name="_captcha" value="false">
+
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label for="name" class="block text-sm font-medium text-slate-300 mb-2">Name</label>
+                  <input type="text" id="name" name="name" required
+                    class="w-full bg-black/40 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-300 transition-colors"
+                    placeholder="Your Name">
+                </div>
+                <div>
+                  <label for="email" class="block text-sm font-medium text-slate-300 mb-2">Email</label>
+                  <input type="email" id="email" name="email" required
+                    class="w-full bg-black/40 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-300 transition-colors"
+                    placeholder="your@email.com">
+                </div>
+              </div>
+
+              <div>
+                <label for="message" class="block text-sm font-medium text-slate-300 mb-2">Message</label>
+                <textarea id="message" name="message" rows="4" required
+                  class="w-full bg-black/40 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-300 transition-colors"
+                  placeholder="Tell us about what you're looking for..."></textarea>
+              </div>
+
+              <button type="submit"
+                class="w-full rounded-full border border-white/20 bg-white/10 px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white transition hover:bg-white/20 hover:border-white/40">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
     </main>
   </div>
   <!--$--><!--/$-->
