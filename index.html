@@ -55,6 +55,47 @@
                     <a href="#process" class="nav-link transition-colors font-medium">How I Work</a>
                     <a href="#contact" class="nav-link transition-colors font-medium">Contact</a>
                 </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-white hover:text-cyan-bright">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 space-y-3">
+                <a href="#websites" class="block nav-link transition-colors font-medium">Featured Websites</a>
+                <a href="#services" class="block nav-link transition-colors font-medium">Services</a>
+                <a href="#process" class="block nav-link transition-colors font-medium">How I Work</a>
+                <a href="#contact" class="block nav-link transition-colors font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-[85vh] flex items-center justify-center pt-24 pb-12 px-6 relative overflow-hidden">
+
+        <!-- Particle Field Background -->
+        <canvas id="particle-canvas" class="absolute inset-0"></canvas>
+
+        <div class="hero-content max-w-7xl mx-auto w-full relative">
+            <div class="fade-in text-center max-w-5xl mx-auto">
+                <!-- Top Branding -->
+                <div class="mb-4">
+                    <h1 class="branding-title">Andrew Grow — Web Designer & Specialist</h1>
+                </div>
+
+                <h1 class="text-6xl md:text-8xl font-heading font-black text-white mb-6 leading-tight hero-title">
+                    Websites that<br>
+                    <span class="grow-highlight">GROW</span> your business
+                </h1>
+
+                <p class="text-xl md:text-2xl text-white mb-8 leading-relaxed max-w-2xl mx-auto">
+                    Clean, responsive, and tailored to your goals.
+                </p>
                 <a href="#contact" class="btn-primary inline-block mb-0">
                     Book a Consultation
                 </a>
